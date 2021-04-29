@@ -1,0 +1,23 @@
+body {
+    background-color: #fff;
+    color: rgba(0,0,0,0.8);
+    h1, h2, h3, p, a {
+      color: black !important;
+    }
+  }
+
+.dark-mode body {
+  background-color: #000;
+  h1, h2, h3, p, a {
+    color: white !important;
+  }
+}
+
+  .sepia-mode body {
+    background-color: #f1e7d0;
+    color: #433422;
+    a {
+      color: #091a28;
+      text-decoration: none;
+    }
+  }

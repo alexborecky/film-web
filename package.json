@@ -1,0 +1,27 @@
+{
+  "name": "film-web",
+  "version": "1.0.0",
+  "description": "My astounding Nuxt.js project",
+  "author": "Alex Borecky",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "fibers": "^5.0.0",
+    "prettier": "^1.19.1",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.32.12",
+    "sass-loader": "^10.1.1"
+  }
+}

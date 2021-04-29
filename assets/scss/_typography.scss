@@ -1,0 +1,71 @@
+p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    max-width: 1200px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif ;
+    font-size: 120px;
+    font-weight: 600;
+    max-width: 900px;
+    color: white;
+    @media only screen and (max-width: 720px) {
+        font-size: 56px;
+    }
+    @media only screen and (max-width: 640px) {
+        font-size: 48px;
+    }
+    @media only screen and (max-width: 450px) {
+        font-size: 40px;
+    }
+    @media only screen and (max-width: 350px) {
+        font-size: 32px;
+    }
+}
+
+h2 {
+    font-family: 'Krona One', sans-serif ;
+    font-size: 40px;
+    margin: 16px 0;
+    color: white;
+    @media only screen and (max-width: 550px) {
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-size: 64px;
+    font-family: 'Krona One', sans-serif ;
+}
+
+a, button {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .3s ease-in-out;
+    font-family: 'Krona One', sans-serif ;
+    &:hover {
+        color: $main-orange !important;
+    }
+}
+
+.bigger {
+    font-size: 24px;
+    @media only screen and (max-width: 450px) {
+        font-size: 16px;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    position: relative;
+    .underline {
+        background-color: $main-orange;
+        position: absolute;
+        z-index: -1;
+    }
+}
