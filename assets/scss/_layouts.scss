@@ -13,7 +13,7 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1440px) {
         width: 90%;
     }
     @media only screen and (max-width: 550px) {
@@ -70,7 +70,10 @@ body {
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
+    @media (max-width: 1300px) {
+        padding: 40px 0;
+    }
 }
 
 ul {

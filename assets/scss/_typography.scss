@@ -13,8 +13,8 @@ h1 {
     font-weight: 600;
     max-width: 900px;
     color: white;
-    @media only screen and (max-width: 720px) {
-        font-size: 56px;
+    @media only screen and (max-width: 1024px) {
+        font-size: 80px;
     }
     @media only screen and (max-width: 640px) {
         font-size: 48px;
@@ -32,6 +32,9 @@ h2 {
     font-size: 40px;
     margin: 16px 0;
     color: white;
+    @media (max-width: 1300px) {
+        font-size: 32px;
+    }
     @media only screen and (max-width: 550px) {
         font-size: 32px;
     }

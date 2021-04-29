@@ -162,6 +162,9 @@ export default {
     height: 70vh;
     position: relative;
     // background-color: blue;
+    @media (max-width: 1300px) {
+      height: 85%;
+    }
     #bottom {
       position: absolute;
       left: 0;
@@ -189,6 +192,9 @@ export default {
       width: 60%;
       bottom: 24px;
       right: 0;
+      @media (max-width: 1300px) {
+        right: 20%;
+      }
     }
   }
   p {
@@ -237,7 +243,7 @@ export default {
     }
     .background {
       width: 100%;
-      height: 800px;
+      height: 100%;
       background-color: $main-orange;
       position: absolute;
       top: 16px;
@@ -296,6 +302,12 @@ export default {
       color: rgba($color: white, $alpha: .4);
       font-size: 64px;
       font-family: 'Krona One', sans-serif;
+      @media (max-width: 1300px) {
+        font-size: 48px;
+      }
+      @media (max-width: 800px) {
+        font-size: 32px;
+      }
     }
   }
 }
@@ -341,6 +353,12 @@ footer {
       color: transparent;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: $main-blue;
+      @media (max-width: 1300px) {
+        font-size: 64px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 40px;
+      }
       &:hover {
         color: $main-blue !important;
       }
@@ -365,8 +383,11 @@ footer {
 .social-media {
     a {
       color: #F27456;
-      margin-right: 80px;
       font-size: 16px !important;  
+      margin-right: 56px; 
+      &:last-child {
+        margin-right: 0px;
+      }
       svg {
         margin-right: 8px;
       }
