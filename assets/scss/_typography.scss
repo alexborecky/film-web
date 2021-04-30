@@ -17,7 +17,7 @@ h1 {
         font-size: 80px;
     }
     @media only screen and (max-width: 640px) {
-        font-size: 48px;
+        font-size: 64px;
     }
     @media only screen and (max-width: 450px) {
         font-size: 40px;
@@ -37,6 +37,9 @@ h2 {
     }
     @media only screen and (max-width: 550px) {
         font-size: 32px;
+    }
+    @media only screen and (max-width: 320px) {
+        font-size: 24px;
     }
 }
 
@@ -70,5 +73,8 @@ h1, h2, h3, h4, h5 {
         background-color: $main-orange;
         position: absolute;
         z-index: -1;
+        @media (max-width: 800px) {
+            right: 0 !important;
+        }
     }
 }

@@ -64,17 +64,19 @@
                 Instagram
               </a>
             </li>
-            <a href="https://youtu.be/xLExJm6A13A" target="_blank">
-              <button class="flex center">
-                Watch
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.2" d="M16 4C13.6266 4 11.3066 4.70379 9.33316 6.02236C7.35977 7.34094 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.6936 20.6689 5.83649 22.8071 7.51472 24.4853C9.19295 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2324 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62901 24.4853 7.51471C23.371 6.40041 22.0481 5.51649 20.5922 4.91344C19.1363 4.31038 17.5759 4 16 4ZM14 20V12L20 16L14 20Z" fill="#F27456"/>
-                  <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#F27456" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M20 16L14 12V20L20 16Z" stroke="#F27456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="background"></div>
-              </button>
-            </a>
+            <li>
+              <a href="https://youtu.be/xLExJm6A13A" target="_blank">
+                <button class="flex center">
+                  Watch
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M16 4C13.6266 4 11.3066 4.70379 9.33316 6.02236C7.35977 7.34094 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.6936 20.6689 5.83649 22.8071 7.51472 24.4853C9.19295 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2324 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62901 24.4853 7.51471C23.371 6.40041 22.0481 5.51649 20.5922 4.91344C19.1363 4.31038 17.5759 4 16 4ZM14 20V12L20 16L14 20Z" fill="#F27456"/>
+                    <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#F27456" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M20 16L14 12V20L20 16Z" stroke="#F27456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="background"></div>
+                </button>
+              </a>
+            </li>
             <li>
               <a class="flex center" href="https://instagram/originfilmofficial">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,6 +167,9 @@ export default {
     @media (max-width: 1300px) {
       height: 85%;
     }
+    @media (max-width: 680px) {
+      height: 95%;
+    }
     #bottom {
       position: absolute;
       left: 0;
@@ -180,6 +185,9 @@ export default {
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #F27456;
+    @media (max-width: 800px) {
+      -webkit-text-stroke-width: 1px;
+    }
   }
   p, h1 {
     margin-left: 40px;
@@ -195,6 +203,13 @@ export default {
       @media (max-width: 1300px) {
         right: 20%;
       }
+      @media (max-width: 680px) {
+        height: 24px;
+      }
+      @media (max-width: 450px) {
+        height: 16px;
+        bottom: 8px;
+      }
     }
   }
   p {
@@ -205,9 +220,14 @@ export default {
   #portrait {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0 !important;
     max-height: 100vh;
     z-index: -1;
+    @media (max-width: 800px) {
+      opacity: .64;
+      max-height: 80vh;
+      opacity: .24;
+    }
   }
 }
 
@@ -215,6 +235,9 @@ export default {
   p {
     margin: 24px 0;
     color: rgba($color: white, $alpha: .8);
+    @media (max-width: 680px) {
+      font-size: 16px;
+    }
   }
   h2 {
     .underline {
@@ -222,6 +245,10 @@ export default {
       width: 120px;
       bottom: 8px;
       left: 24px;
+      @media (max-width: 680px) {
+        height: 12px;
+        bottom: 4px;
+      }
     }
   }
 }
@@ -233,6 +260,10 @@ export default {
       width: 64%;
       bottom: 4px;
       right: -20%;
+      @media (max-width: 680px) {
+        height: 12px;
+        bottom: 4px;
+      }
     }
   }
   .film {
@@ -249,6 +280,10 @@ export default {
       top: 16px;
       left: 16px;
       z-index: -1;
+      @media (max-width: 680px) {
+        top: 8px;
+        left: 8px;
+      }
     }
   }
   button {
@@ -282,38 +317,72 @@ export default {
       }
     }
   }
+  @media (max-width: 800px) {
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 680px) {
+    .social-media {
+      ul {
+        flex-flow: column; 
+        li {
+          margin-right: 0;
+          margin: 16px 0;
+          &:nth-child(1) {
+            order: 2;
+          }
+          &:nth-child(2) {
+            order: 1;
+          }
+          &:nth-child(3) {
+            order: 3;
+          }
+        }
+      }
+    }
+  }
 }
 
 .upcoming {
   h2 {
+    text-align: center;
     .underline {
       height: 16px;
       width: 50%;
       bottom: 4px;
       left: -20%;
+      @media (max-width: 680px) {
+        height: 12px;
+        left: 0;
+      }
     }
   }
   ul {
     margin: 64px 0;
     li {
       margin: 20px 0;
+      text-align: center;
     }
     a {
       color: rgba($color: white, $alpha: .4);
       font-size: 64px;
       font-family: 'Krona One', sans-serif;
-      @media (max-width: 1300px) {
+      text-align: center;
+      @media (max-width: 1340px) {
         font-size: 48px;
       }
-      @media (max-width: 800px) {
+      @media (max-width: 1024px) {
         font-size: 32px;
+      }
+      @media (max-width: 450px) {
+        font-size: 24px;
       }
     }
   }
 }
 
 .representation {
-  height: 60vh;
+  height: 50vh;
   h2 {
     .underline {
       height: 16px;
@@ -325,6 +394,10 @@ export default {
   p {
     font-style: italic;
     margin-top: 80px;
+  }
+  @media (max-width: 800px) {
+    min-height: 50vh !important;
+    height: 60vh;
   }
 }
 
@@ -359,6 +432,17 @@ footer {
       @media (max-width: 1024px) {
         font-size: 40px;
       }
+      @media (max-width: 680px) {
+        font-size: 24px;
+      }
+      @media (max-width: 450px) {
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+      }
+      @media (max-width: 320px) {
+        font-size: 16px;
+        -webkit-text-stroke-width: 1px;
+      }
       &:hover {
         color: $main-blue !important;
       }
@@ -381,18 +465,30 @@ footer {
 }
 
 .social-media {
+  li {
+    margin-right: 56px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
     a {
       color: #F27456;
       font-size: 16px !important;  
-      margin-right: 56px; 
-      &:last-child {
-        margin-right: 0px;
-      }
       svg {
         margin-right: 8px;
       }
     }
     margin-top: 56px;
+    @media (max-width: 320px) {
+      margin-top: 24px;
+      ul {
+        // flex-flow: column; 
+        li {
+          margin-right: 16px;
+          transform: scale(.8);
+        }
+      }
+    }
   }
 
 </style>
