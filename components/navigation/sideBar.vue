@@ -76,6 +76,9 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
 }
 
 
@@ -95,7 +98,7 @@ export default {
     .container {
       .top-bar {
         height: 80px;
-        margin-top: 40px;
+        margin-top: 36px;
         justify-content: space-between;
         a {
           font-size: 24px;
@@ -109,6 +112,9 @@ export default {
         width: 40px;
         justify-content: flex-end;
         align-items: center;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
