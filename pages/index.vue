@@ -2,12 +2,12 @@
   <div id="home" class="hero">
     <div class="container">
       <div class="value section full-width flex center">
-        <img id="portrait" src="https://ik.imagekit.io/alexborecky/Films/alex-min_QjxpvA5K0gz.png" alt="">
+        <img id="portrait" src="https://ik.imagekit.io/alexborecky/Films/alex-min_QjxpvA5K0gz.png" alt="Alexandr Borecky Director Actor Writer IMDB Movie Short Film Origin">
         <div class="text flex center-column-left">
           <h1><span>Alexandr</span><br>Borecky<div class="underline"></div></h1>
           <p>Actor & Director</p>
-          <img id="bottom" src="https://ik.imagekit.io/alexborecky/Films/union_JVJ3fwHP9UK.svg" alt="">
-          <img id="top" src="https://ik.imagekit.io/alexborecky/Films/union2_qoMMA9Kat.svg" alt="">
+          <img id="bottom" src="https://ik.imagekit.io/alexborecky/Films/union_JVJ3fwHP9UK.svg" alt="Alexandr Borecky Director Actor Writer IMDB">
+          <img id="top" src="https://ik.imagekit.io/alexborecky/Films/union2_qoMMA9Kat.svg" alt="Alexandr Borecky Director Actor Writer IMDB">
         </div>
       </div>
       <div id="bio" class="bio section flex center-column-left">
@@ -48,7 +48,7 @@
       <div id="projects" class="recent-projects section flex center column">
         <h2>Recent projects <div class="underline"></div> </h2>
         <div class="film">
-          <img src="https://ik.imagekit.io/alexborecky/Films/thumbnail-min__KErdXKtg.png" alt="">
+          <img src="https://ik.imagekit.io/alexborecky/Films/thumbnail-min__KErdXKtg.png" alt="Alexandr Borecky Director Actor Writer IMDB Film Movie Short Origin">
           <div class="background"></div>
         </div>
         <div class="social-media">
