@@ -2,7 +2,7 @@
     <div class="navigation full-width flex" :class="{'hidden-navbar': !showNavbar, colour: !transparent, scrolled: !scrolledNav}">
         <div class="container flex">
             <nuxt-link to="#home" class="logo">
-                <a href="">AB.</a>
+                AB.
                 <div>
                     <!-- <img src="@/assets/images/logo.svg" alt=""> -->
                 </div>
@@ -66,15 +66,14 @@ const OFFSET = 60
     margin-top: 24px;
     background-color: $main-blue;
     transition: .4s ease-in-out;
+    z-index: 1000;
     .container {
         height: 100%;
         justify-content: space-between;
         align-items: center;
         .logo {
-            a {
-                font-size: 24px;
-                color: $main-orange;
-            }
+            font-size: 24px;
+            color: $main-orange;
             img {
                 height: 40px;
             }
