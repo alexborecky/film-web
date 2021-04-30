@@ -2,8 +2,10 @@
     <div class="burger-nav flex center">
         <div class="open">
             <div class="flex middle" @click="isActive = !isActive" >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21M3 6H21M3 18H21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="38" height="6" stroke="white" stroke-width="2"/>
+                <rect x="1" y="13" width="38" height="6" stroke="white" stroke-width="2"/>
+                <rect x="1" y="25" width="38" height="6" stroke="white" stroke-width="2"/>
                 </svg>
             </div> 
         </div>
@@ -11,22 +13,23 @@
         <div class="nav-container flex center-column-top" :class="{ passive: isActive }">
             <div class="container flex center-column-right">
               <div class="top-bar flex full-width">
-                <div class="logo flex center">
+                <div class="logo flex center" @click="isActive = !isActive">
                   <nuxt-link to="/">AB.</nuxt-link>
                 </div>
                 <div class="close flex">
                     <div class="flex middle" @click="isActive = !isActive" >
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4.41421" y="29" width="38" height="6" transform="rotate(-45 4.41421 29)" fill="white" stroke="white" stroke-width="2"/>
+                        <rect x="-1.41421" width="38" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 34.5272 28)" fill="white" stroke="white" stroke-width="2"/>
                         </svg>
                     </div> 
                 </div>
               </div>
               <div class="mobile-links flex center-column-top">
                   <ul>
-                      <li @click="isActive = !isActive"><nuxt-link to="/">Bio</nuxt-link></li>
-                      <li @click="isActive = !isActive"><nuxt-link to="/films">Project</nuxt-link></li>
-                      <li @click="isActive = !isActive"><nuxt-link to="/about">Contact</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="#bio">Bio</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="#projects">Project</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="#contact">Contact</nuxt-link></li>
                   </ul>
               </div>
             </div>
@@ -76,8 +79,36 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    svg {
+      transition: .3s ease-in-out;
+      rect {
+        transition: .3s ease-in-out;
+        fill: rgba($color: $main-orange, $alpha: 0);
+      }
+    }
     &:hover {
       cursor: pointer;
+      svg {
+        rect {
+          fill: rgba($color: $main-orange, $alpha: .4);
+          stroke: $main-orange;
+          &:nth-child(1) {
+            width: 32px;
+          }
+          &:nth-child(2) {
+            width: 32px;
+            transform: translateX(6px);
+          }
+          &:nth-child(3) {
+            width: 24px;
+          }
+        }
+      }
+    }
+    @media (max-width:680px) {
+      svg {
+        width: 32px;
+      }
     }
 }
 
@@ -103,6 +134,10 @@ export default {
         a {
           font-size: 24px;
           color: $main-blue;
+          &:hover {
+            opacity: 0.4 !important;
+            color: $main-blue !important;
+          }
         }
       }
       .close {
@@ -112,8 +147,20 @@ export default {
         width: 40px;
         justify-content: flex-end;
         align-items: center;
+        svg {
+          transition: .3s ease-in-out;
+          rect {
+            transition: .3s ease-in-out;
+          }
+        }
         &:hover {
           cursor: pointer;
+          svg {
+            rect {
+              fill: rgba($color: $main-orange, $alpha: 1);
+              stroke: $main-blue;
+            }
+          }
         }
       }
     }
@@ -149,6 +196,9 @@ export default {
       justify-content: center;
       text-decoration: none;
       font-size: 64px;
+      @media (max-width: 680px) {
+        font-size: 48px;
+      }
       &:hover {
         color: $main-blue !important;
       }

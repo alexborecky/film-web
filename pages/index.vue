@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div id="home" class="hero">
     <div class="container">
       <div class="value section full-width flex center">
         <img id="portrait" src="https://ik.imagekit.io/alexborecky/Films/alex-min_QjxpvA5K0gz.png" alt="">
@@ -10,7 +10,7 @@
           <img id="top" src="https://ik.imagekit.io/alexborecky/Films/union2_qoMMA9Kat.svg" alt="">
         </div>
       </div>
-      <div class="bio section flex center-column-left">
+      <div id="bio" class="bio section flex center-column-left">
         <div class="content flex center-column-left">
           <h2>Bio <div class="underline"></div> </h2>
           <p>Alexandr Borecky was born Czech Republic, and raised in Prague, where he is working on several projects as an actor, writer and director. His debut work is short film Origin (2021), which he wrote, produced, directed and in which he also starred.</p>
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="recent-projects section flex center column">
+      <div id="projects" class="recent-projects section flex center column">
         <h2>Recent projects <div class="underline"></div> </h2>
         <div class="film">
           <img src="https://ik.imagekit.io/alexborecky/Films/thumbnail-min__KErdXKtg.png" alt="">
@@ -54,7 +54,7 @@
         <div class="social-media">
           <ul class="flex center">
             <li>
-              <a class="flex center" href="https://instagram/originfilmofficial">
+              <a target="_blank" class="flex center" href="https://www.instagram.com/originfilmofficial/">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.2" d="M21.5 4.5H10.5C9.71207 4.5 8.93185 4.65519 8.2039 4.95672C7.47594 5.25825 6.81451 5.7002 6.25735 6.25735C5.7002 6.81451 5.25825 7.47594 4.95672 8.2039C4.65519 8.93185 4.5 9.71207 4.5 10.5V21.5C4.5 22.2879 4.65519 23.0681 4.95672 23.7961C5.25825 24.5241 5.7002 25.1855 6.25735 25.7426C6.81451 26.2998 7.47594 26.7418 8.2039 27.0433C8.93185 27.3448 9.71207 27.5 10.5 27.5H21.5C22.2879 27.5 23.0681 27.3448 23.7961 27.0433C24.5241 26.7418 25.1855 26.2998 25.7426 25.7426C26.2998 25.1855 26.7418 24.5241 27.0433 23.7961C27.3448 23.0681 27.5 22.2879 27.5 21.5V10.5C27.5 9.71207 27.3448 8.93185 27.0433 8.2039C26.7418 7.47594 26.2998 6.81451 25.7426 6.25735C25.1855 5.7002 24.5241 5.25825 23.7961 4.95672C23.0681 4.65519 22.2879 4.5 21.5 4.5ZM16 21C15.0111 21 14.0444 20.7068 13.2221 20.1573C12.3999 19.6079 11.759 18.827 11.3806 17.9134C11.0022 16.9998 10.9031 15.9945 11.0961 15.0245C11.289 14.0546 11.7652 13.1637 12.4645 12.4645C13.1637 11.7652 14.0546 11.289 15.0245 11.0961C15.9945 10.9031 16.9998 11.0022 17.9134 11.3806C18.827 11.759 19.6079 12.3999 20.1573 13.2221C20.7068 14.0444 21 15.0111 21 16C21 17.3261 20.4732 18.5978 19.5355 19.5355C18.5978 20.4732 17.3261 21 16 21Z" fill="#F27456"/>
                     <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="#F27456" stroke-width="2" stroke-miterlimit="10"/>
@@ -78,7 +78,7 @@
               </a>
             </li>
             <li>
-              <a class="flex center" href="https://instagram/originfilmofficial">
+              <a target="_blank" class="flex center" href="http://imdb.com/title/tt10544116/">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.2" d="M27 6H5C4.73478 6 4.48043 6.10536 4.29289 6.29289C4.10536 6.48043 4 6.73478 4 7V25C4 25.2652 4.10536 25.5196 4.29289 25.7071C4.48043 25.8946 4.73478 26 5 26H27C27.2652 26 27.5196 25.8946 27.7071 25.7071C27.8946 25.5196 28 25.2652 28 25V7C28 6.73478 27.8946 6.48043 27.7071 6.29289C27.5196 6.10536 27.2652 6 27 6ZM11.5126 18C10.9192 18 10.3392 17.8241 9.84585 17.4944C9.3525 17.1648 8.96798 16.6962 8.74092 16.1481C8.51386 15.5999 8.45445 14.9967 8.5702 14.4147C8.68596 13.8328 8.97168 13.2982 9.39124 12.8787C9.81079 12.4591 10.3453 12.1734 10.9273 12.0576C11.5092 11.9419 12.1124 12.0013 12.6606 12.2284C13.2088 12.4554 13.6773 12.8399 14.007 13.3333C14.3366 13.8266 14.5126 14.4067 14.5126 15C14.5126 15.394 14.435 15.7841 14.2842 16.1481C14.1334 16.512 13.9125 16.8427 13.6339 17.1213C13.3553 17.3999 13.0246 17.6209 12.6606 17.7716C12.2966 17.9224 11.9065 18 11.5126 18Z" fill="#F27456"/>
               <path d="M19 14H24" stroke="#F27456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +103,7 @@
           </ul>
         </div>
       </div>
-      <div class="representation section flex center column">
+      <div id="contact" class="representation section flex center column">
         <h2>Representation <div class="underline"></div></h2>
         <p>Still searching...</p>
       </div>
