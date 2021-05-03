@@ -478,8 +478,19 @@ footer {
     a {
       color: #F27456;
       font-size: 16px !important;  
+      &:hover {
+        color: $hover-orange !important;
+        svg {
+          path {
+            stroke: #F8451B;
+          }
+        }
+      }
       svg {
         margin-right: 8px;
+        path {
+          transition: .3s ease-in-out;
+        }
       }
     }
     margin-top: 56px;

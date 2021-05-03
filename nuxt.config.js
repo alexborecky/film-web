@@ -17,7 +17,7 @@ export default {
       { property: 'og:type', content: 'home page'},
       { property: 'og:url', content: 'https://alexborecky.com'},
       { property: 'og:title', content: 'Alexandr Borecky | Director, Actor & Writer' },
-      { property: 'og:description', content: 'Alexandr Borecký is a award winning director, writer and actor' },
+      { property: 'og:description', content: 'Alexandr Borecký is an award winning director, writer and actor' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
