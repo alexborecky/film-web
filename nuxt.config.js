@@ -6,10 +6,18 @@ export default {
   */
   head: {
     title: 'Alexandr Borecky | Director, Writer and Actor',
+    htmlAttrs: {
+      lang: 'cs',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/My__Web/ogImage_vqhS4obQI.png' },
+      { property: 'og:type', content: 'home page'},
+      { property: 'og:url', content: 'https://alexborecky.com'},
+      { property: 'og:title', content: 'Alexandr Borecky | Director, Actor & Writer' },
+      { property: 'og:description', content: 'Alexandr Borecký is a award winning director, writer and actor' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
