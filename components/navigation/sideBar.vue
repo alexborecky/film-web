@@ -27,9 +27,9 @@
               </div>
               <div class="mobile-links flex center-column-top">
                   <ul>
-                      <li @click="isActive = !isActive"><nuxt-link to="#bio">Bio</nuxt-link></li>
-                      <li @click="isActive = !isActive"><nuxt-link to="#projects">Project</nuxt-link></li>
-                      <li @click="isActive = !isActive"><nuxt-link to="#contact">Contact</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="/#bio">Bio</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="/#projects">Project</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="/#contact">Contact</nuxt-link></li>
                   </ul>
               </div>
             </div>

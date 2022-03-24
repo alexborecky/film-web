@@ -1,7 +1,7 @@
 <template>
     <div class="navigation full-width flex" :class="{'hidden-navbar': !showNavbar, colour: !transparent, scrolled: !scrolledNav}">
         <div class="container flex">
-            <nuxt-link to="#home" class="logo">
+            <nuxt-link to="/" class="logo">
                 AB.
                 <div>
                     <!-- <img src="@/assets/images/logo.svg" alt=""> -->
