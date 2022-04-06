@@ -23,7 +23,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { href: "https://fonts.gstatic.com", rel:"preconnect"},
       { href: "https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Krona+One&display=swap", rel: "stylesheet"},
-      { href: "https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Righteous&display=swap", rel: "stylesheet"},
+      { href: "https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap", rel: "stylesheet"},
     ]
   },
   /*
@@ -36,13 +36,18 @@ export default {
   css: [
     '~/assets/scss/_typography.scss',
     '~/assets/scss/_layouts.scss',
+    'aos/dist/aos.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '~/plugins/uiKit.js',
+    { src: "@/plugins/aos", mode: "client" },
   ],
+  purgeCSS: {
+    whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],
+  },
   /*
   ** Nuxt.js dev-modules
   */

@@ -1,22 +1,33 @@
 <template>
   <div id="home" class="hero">
-    <div class="container">
       <div class="value section full-width flex center">
         <!-- <img id="portrait" src="https://ik.imagekit.io/alexborecky/Films/alex-min_QjxpvA5K0gz.png" alt="Alexandr Borecky Director Actor Writer IMDB Movie Short Film Origin"> -->
-        <div class="text flex center-column-left">
-          <h1><span>Alexandr </span><br>Borecky<div class="underline"></div></h1>
+        <div class="text flex middle column container">
+          <h1><span>Alexandr </span><br>Borecky</h1>
           <p>Writer, Director & Actor</p>
           <img id="bottom" src="https://ik.imagekit.io/alexborecky/Films/union_JVJ3fwHP9UK.svg" alt="Alexandr Borecky Director Actor Writer IMDB">
           <img id="top" src="https://ik.imagekit.io/alexborecky/Films/union2_qoMMA9Kat.svg" alt="Alexandr Borecky Director Actor Writer IMDB">
         </div>
       </div>
       <div id="projects" class="recent-projects section flex center column">
-        <h2>Recent projects <div class="underline"></div> </h2>
-        <div class="film">
-          <img src="https://ik.imagekit.io/alexborecky/Films/thumbnail-min__KErdXKtg.png" alt="Alexandr Borecky Director Actor Writer IMDB Film Movie Short Origin">
-          <div class="background"></div>
-        </div>
-        <div class="social-media">
+        <h2>Recent projects </h2>
+        <div class="film full-width flex middle column"> 
+          <!-- data-aos="zoom-in" data-aos-delay="200" -->
+          <img class="title" src="https://ik.imagekit.io/alexborecky/Films/awards/title_2JZqmnMTy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649240597088" alt="">
+          <img 
+          data-aos="fade-up" data-aos-delay="200"  data-aos-duration="3000"
+          class="laurels finalists" src="https://ik.imagekit.io/alexborecky/Films/awards/laurels/semi_da6kGl_Ao.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649274476999" alt="">
+          <img 
+          data-aos="fade-up" data-aos-delay="600"  data-aos-duration="3000"
+          class="laurels finalists" src="https://ik.imagekit.io/alexborecky/Films/awards/laurels/selection_x1eoJjOzw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649274476968" alt="">
+          <img 
+          data-aos="fade-up" data-aos-delay="400"  data-aos-duration="3000"
+          class="laurels finalists" src="https://ik.imagekit.io/alexborecky/Films/awards/laurels/finalist_X1bVVZtU0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649274476866" alt="">
+          <img 
+          data-aos="fade-up" data-aos-delay="8000"  data-aos-duration="3000"
+          class="laurels finalists" src="https://ik.imagekit.io/alexborecky/Films/awards/laurels/winners_2qvfurAbC.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649274477288" alt="">
+          <div class="cover"></div>
+          <div class="social-media">
           <ul class="flex center">
             <li>
               <a href="https://youtu.be/xLExJm6A13A" target="_blank">
@@ -46,24 +57,27 @@
             </li>
           </ul>
         </div>
+        </div>
+        
       </div>
       <div class="upcoming section flex middle column">
         <h2>Projects in development <div class="underline"></div> </h2>
         <div class="films">
           <ul class="flex column center">
-            <nuxt-link to="tryst">TRYST <span>(Pre-production 2022)</span></nuxt-link>
+            <li><a href="https://pro.imdb.com/title/tt15158082/?ref_=hm_track_pu_tt_1" target="_blank">Untold Pieces <span>(Pre-production 2022)</span></a></li>
             <li><a href="https://pro.imdb.com/title/tt13134098?s=2ebc8f11-9523-d41c-d0fb-6a2811425e82&site_preference=normal" target="_blank">Easier <span>(Script)</span></a></li>
             <li><a href="https://pro.imdb.com/title/tt13527880?s=54bc8f11-55d1-5dd0-1fc0-1c5169c08485&site_preference=normal" target="_blank">The Deportation of Miseries<span>(Story)</span></a></li>
             <li><a href="https://pro.imdb.com/title/tt9124826?s=98bc8f11-7012-4fb4-73b7-9564c76c614b&site_preference=normal" target="_blank">Concluding <span>(Script)</span></a></li>
           </ul>
         </div>
       </div>
-            <div id="bio" class="bio section flex center-column-left"> 
+      <div id="bio" class="bio container section flex center-column-left"> 
         <div class="content flex center-column-left">
           <h2>Bio <div class="underline"></div> </h2>
-          <p>Alexandr Borecky was born Czech Republic, and raised in Prague, where he is working on several projects as an actor, writer and director. His debut work is short film Origin (2021), which he wrote, produced, directed and in which he also starred.</p>
+          <p>Alexandr Borecky was born in Czech Republic and raised in Prague where he is working on several projects as a director, actor and producer alongside his writing. His debut work is a short film Origin (2021) awarded by 7 festivals for Best Short Film, Best First-Time Director and Actor, which he wrote, produced, directed and starred in.</p>
           <p>While studying at Charles University Alexandr took classes of theatrical improvisation. That's where he was offered to study at Prague Conservatory of Acting which he eventually refused and continued at Charles University.</p>
-          <p> He left the university three years later, started a proper theatrical training and decided to pursue acting as a career. During this stage of the training he was able to take part in a few theatrical productions in Prague. In 2017 he moved to Los Angeles to get proper on-camera acting training which he received in form of individual classes. After moving back to Europe, Alexandr started writing and focusing on directing. </p>
+          <p> He left the university three years later, started a proper theatrical training and decided to pursue a career in film. During his training Alex was able to take part in a few theatrical productions in Prague. In 2017 he moved to Los Angeles to get a proper on-camera acting training which he received in form of individual classes. After moving back to Europe, Alexandr started writing and focusing on directing. </p>
+          <p>Alexandr and his team are currently preparing production of his new short film Untold Pieces (2022).</p>
           <p class="hidden">
             Alex first encountered acting during drama classes in high school. After few small school productions, Alexandr moved to Atlanta at the age of 17 where he first encountered musical theatre and had a chance to perform in productions such as Les Misérables, Mamma Mia and Grease. <br>
             In 2017 he moved to Los Angeles to get a proper on-camera acting training which he received in form of individual classes. After further consideration, research and interviews he decided to adopt a method technique for his future work, following the footsteps of his role models Daniel Day-Lewis, Javier Bardem or Joaquin Phoenix.
@@ -97,11 +111,10 @@
           </div>
         </div>
       </div>
-      <div id="contact" class="representation flex center column">
+      <div id="contact" class="representation container flex center column">
         <h2>Representation <div class="underline"></div></h2>
         <p>Still searching...</p>
       </div>
-    </div>
     <footer class="flex middle">
         <div class="content flex column center">
           <h2>Get in touch <div class="underline"></div></h2>
@@ -140,8 +153,20 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-
+import selection from '~/assets/data/selections.js'
+import semiFinalist from '~/assets/data/semi-finalists.js'
+import finalist from '~/assets/data/finalists.js'
+import winner from '~/assets/data/winners.js'
 export default {
+
+  data () {
+    return {
+      selections: selection,
+      semiFinalists: semiFinalist,
+      finalists: finalist,
+      winners: winner,
+    }
+  },
   components: {
     Logo
   }
@@ -175,15 +200,14 @@ export default {
     }
   }
   span {
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #F27456;
-    @media (max-width: 800px) {
-      -webkit-text-stroke-width: 1px;
-    }
+    color: #F27456;
+    // -webkit-text-stroke-width: 2px;
+    // -webkit-text-stroke-color: #F27456;
+    // @media (max-width: 800px) {
+    //   -webkit-text-stroke-width: 1px;
+    // }
   }
   p, h1 {
-    margin-left: 40px;
   }
   h1 {
     .underline {
@@ -193,6 +217,7 @@ export default {
       width: 60%;
       bottom: 24px;
       right: 0;
+      text-align: center;
       @media (max-width: 1300px) {
         right: 20%;
       }
@@ -207,7 +232,6 @@ export default {
   }
   p {
     font-size: 24px;
-    font-style: italic;
     margin-top: 40px;
     opacity: .64;
     @media (max-width: 680px) {
@@ -251,6 +275,7 @@ export default {
 }
 
 .recent-projects {
+  height: 100vh;
   h2 {
     .underline {
       height: 16px;
@@ -266,8 +291,64 @@ export default {
   .film {
     position: relative;
     margin: 40px 0;
-    img {
+    height: 100%;
+    .cover {
+      background-color: #160000;
+      opacity: 0.4;
+      height: 90vh;
       width: 100%;
+      position: absolute;
+      top: -2vh;
+      left: 0;
+      @media (max-width: 1200px) {
+        opacity: .72;
+      }
+      @media (max-width: 550px) {
+        background-image: url(https://ik.imagekit.io/alexborecky/Films/awards/laurels/mobile_W3TIPNoyh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649275855243);
+        background-size: cover;
+        opacity: .2;
+        top: -22vh;
+      }
+    }
+    .social-media {
+      margin-top: 40px;
+      z-index: 1000;
+      @media (max-width: 680px) {
+        margin-top: 40px;
+        ul li:nth-child(1) {
+          order: 1 !important;
+        }
+      }
+    }
+    .title {
+      z-index: 1000;
+      height: 10%;
+      @media (max-width: 600px) {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .laurels {
+      position: absolute;
+    }
+    .finalists {
+      margin: 0 auto;
+      width: 85%;
+      height: auto;
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+      @media (max-width: 680px) {
+        display: none;
+      }
+    }
+    .mobile {
+      display: none !important;
+      @media (max-width: 680px) {
+        display: block !important;
+        width: 100%;
+        top: -10%;
+      }
     }
     .background {
       width: 100%;
@@ -284,12 +365,12 @@ export default {
     }
   }
   button {
-    padding: 16px 40px;
+    padding: 8px 16px 8px 24px;
     background-color: rgba($color: $main-orange, $alpha: .08);
     border: solid $main-orange 2px;
     color: $main-orange;
     position: relative;
-    font-size: 24px;
+    font-size: 14px;
     .background {
       background-color: $main-orange;
       position: absolute;
@@ -305,12 +386,12 @@ export default {
       margin-left: 8px;
     }
     &:hover {
-      background-color: white;
+      background-color: rgba($color: #fff, $alpha: .24);
       border: white 2px solid;
       cursor: pointer;
-      .background {
-        transform: translate(8px, 8px);
-        opacity: 1;
+      color: white !important;
+      svg path {
+        stroke: white !important;
       }
     }
   }

@@ -4,12 +4,12 @@ p {
     line-height: 40px;
     max-width: 1200px;
     color: white;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
     font-family: 'Krona One', sans-serif ;
-    font-size: 120px;
+    font-size: 80px;
     font-weight: 600;
     max-width: 900px;
     color: white;
@@ -49,12 +49,12 @@ h3 {
 }
 
 a, button {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 2px;
     transition: .3s ease-in-out;
-    font-family: 'Krona One', sans-serif ;
+    font-family: 'Poppins', sans-serif ;
     &:hover {
         color: $main-orange !important;
     }
